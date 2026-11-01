@@ -1,0 +1,35 @@
+body {
+  background-color: white;
+  color: black;
+  margin: 20px;
+}
+
+/* Náhledy obrázků - používá se stejný soubor, jen zmenšený */
+.gallery img {
+  height: 150px;
+  cursor: pointer;
+}
+
+/* Modální okno přes celou obrazovku */
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  cursor: none; /* Skryje kurzor myši */
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox.active {
+  display: flex;
+}
+
+#lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+  cursor: none;
+}
